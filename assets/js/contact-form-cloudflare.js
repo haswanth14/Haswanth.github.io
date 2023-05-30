@@ -1,5 +1,5 @@
-const TOKEN = '5478839524:AAEzSFsxINX59qPblbm54zu9XyC4F8W-nGg';
-const CHAT_ID = '1076187640';
+const TOKEN = '6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE';
+const CHAT_ID = '659751252';
 const requestHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
