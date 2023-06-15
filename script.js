@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     // Contact Form
-    function validateForm() {
+    /*function validateForm() {
         if (document.contactForm.name.value == '') {
             document.querySelector('.validation-error.name').classList.add('active')
             document.contactForm.name.focus();
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         return true;
     }
-    /* document.contactForm.addEventListener('submit', function (e) {
+     document.contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
         if (validateForm()) {
             var formElements = document.contactForm.elements;
@@ -201,29 +201,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }, 4000)
                 });
         }
-        */
-        let form = document.querySelector("#form");
 
-        let bot = {
-            TOKEN: "6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE",
-            CHATid:"-913701490",
-        }
         
-        form.addEventListener("submit", e => {
-            e.preventDefault();
-        
-            let message = document.querySelector("#some_message");
-        
-            fetch('https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message.value}',{
-                method: "GET"
-        
-            })
-            .then(success => {
-                alert("Your message has been successfully sent")
-            },error => {
-                alert("An error occurred while sending the message")
-                console.log(error);
-            })
         })
     })
     document.contactForm.addEventListener('change', function (e) {
@@ -232,6 +211,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             el.classList.remove('active')
         })
     })
+    */
     // Copyright
     var currentYear = new Date().getFullYear();
     var copyrightText = document.querySelector(".footer .copyright .year").innerHTML
