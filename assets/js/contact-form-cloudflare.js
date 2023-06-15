@@ -53,7 +53,7 @@ form.addEventListener("submit", e => {
 
     let message = document.querySelector("#some_message");
 
-    fetch('https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}',{
+    fetch('https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message.value}',{
         method: "GET"
 
     })
