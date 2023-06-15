@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     // Contact Form
-    /*function validateForm() {
+    function validateForm() {
         if (document.contactForm.name.value == '') {
             document.querySelector('.validation-error.name').classList.add('active')
             document.contactForm.name.focus();
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         return true;
     }
-     document.contactForm.addEventListener('submit', function (e) {
+    document.contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
         if (validateForm()) {
             var formElements = document.contactForm.elements;
@@ -201,9 +201,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     }, 4000)
                 });
         }
-
-        
-        })
     })
     document.contactForm.addEventListener('change', function (e) {
         e.preventDefault();
@@ -211,7 +208,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             el.classList.remove('active')
         })
     })
-    */
     // Copyright
     var currentYear = new Date().getFullYear();
     var copyrightText = document.querySelector(".footer .copyright .year").innerHTML
