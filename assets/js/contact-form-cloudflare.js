@@ -23,7 +23,7 @@ async function handleRequest(request) {
                 status: 200,
             })
         }
-        const response = await fetch(`https://api.telegram.org/bot6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE/sendMessage`, {
+        const response = await fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message.value}`, {
             body: JSON.stringify({
                 chat_id: CHAT_ID,
                 text: `<b>New message recived.</b>\n\n<b>Name: </b> ${name}\n<b>Email: </b>${email}\n<b>Message: </b>${message}\n<b>IP: </b>${request.headers.get("cf-connecting-ip")}`,
