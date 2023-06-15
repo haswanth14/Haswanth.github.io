@@ -1,4 +1,4 @@
-const TOKEN = '6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE';
+/*const TOKEN = '6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE';
 const CHAT_ID = '659751252';
 const requestHeaders = {
     "Access-Control-Allow-Origin": "*",
@@ -23,7 +23,7 @@ async function handleRequest(request) {
                 status: 200,
             })
         }
-        const response = await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+        const response = await fetch(`https://api.telegram.org/bot6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE/sendMessage`, {
             body: JSON.stringify({
                 chat_id: CHAT_ID,
                 text: `<b>New message recived.</b>\n\n<b>Name: </b> ${name}\n<b>Email: </b>${email}\n<b>Message: </b>${message}\n<b>IP: </b>${request.headers.get("cf-connecting-ip")}`,
@@ -39,3 +39,28 @@ async function handleRequest(request) {
         return new Response(responseMessage, {status: 200, headers: requestHeaders})
     }
 }
+*/
+
+let form = document.querySelector("#form");
+
+let bot = {
+    TOKEN: "6267905947:AAGKjl5MzSg2Q2ILgFalOhq1XypQaFC_IRE",
+    CHATid:"-913701490",
+}
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    let message = document.querySelector("#some_message");
+
+    fetch('https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}',{
+        method: "GET"
+
+    })
+    .then(success => {
+        alert("Your message has been successfully sent")
+    },error => {
+        alert("An error occurred while sending the message")
+        console.log(error);
+    })
+})
