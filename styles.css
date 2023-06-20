@@ -1005,7 +1005,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .education-skill-section .education-skill-wrapper .education .education-item .stack-list {
     display: flex;
     align-items: center;
-    padding: 7px 0;
+    padding: 10px 0;
 }
 .education-skill-section .education-skill-wrapper .education .education-item .stack-list li {
     margin-right: 16px;
