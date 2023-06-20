@@ -209,6 +209,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0,-30px,0);
 }
 .tag {
+    display: flex;
+    flex-direction: column;
     padding: 4px 8px;
     border: 1px solid var(--light-2);
     border-radius: 4px;
