@@ -1177,7 +1177,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
         padding: 0;
     }
     .Horizontal-list li {
-        margin-right: 10px;
+        margin: 10px;
     }
     /* CONTACT */
     .contact-section .contact-wrapper .contact-form {
