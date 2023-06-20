@@ -209,8 +209,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0,-30px,0);
 }
 .tag {
-    display: flex;
-    flex-direction: column;
     padding: 4px 8px;
     border: 1px solid var(--light-2);
     border-radius: 4px;
@@ -1172,6 +1170,14 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     }
     .education-skill-section .education-skill-wrapper .skill .description {
         padding-top: 40px;
+    }
+    .Horizontal-list {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    .Horizontal-list li {
+        margin-right: 10px;
     }
     /* CONTACT */
     .contact-section .contact-wrapper .contact-form {
