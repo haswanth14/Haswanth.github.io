@@ -965,6 +965,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     line-height: 17px;
     color: var(--cinder-light);
     padding-bottom: 24px;
+    margin: 0;
 }
 .education-skill-section .education-skill-wrapper .education .education-item .date {
     font-weight: 500;
