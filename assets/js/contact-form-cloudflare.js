@@ -35,7 +35,7 @@ async function handleRequest(request) {
             },
         })
         const results = await response.json();
-        const responseMessage = results.ok ? 'Unfortunatly an ERROR occured! please contact via email' : 'An error occurred while sending the message.'
+        const responseMessage = results.ok ? 'unfortunately an ERROR occured! please contact via email' : 'An error occurred while sending the message.'
         return new Response(responseMessage, {status: 200, headers: requestHeaders})
     }
 }
