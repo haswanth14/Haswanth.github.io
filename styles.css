@@ -496,7 +496,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .service-section {
     background: var(--light);
     padding: 114px 0 184px;
-    margin: 196px 0 0;
+    margin: 35vh 0 0;
 }
 
 .service-section .service-item-wrapper {
