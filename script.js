@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     // Dark theme
     var prevActiveTheme = localStorage.getItem("theme-color");
-    document.documentElement.setAttribute("data-theme", prevActiveTheme ? prevActiveTheme : "light");
+    document.documentElement.setAttribute("data-theme", prevActiveTheme ? prevActiveTheme : "dark");
     var themeToggle = document.getElementsByClassName('theme-color-toggle')[0];
     themeToggle.onclick = function () {
         var currentTheme = document.documentElement.getAttribute("data-theme");
