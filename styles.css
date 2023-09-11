@@ -296,7 +296,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 }
 .header .logo {
     width: 113px;
-    height: 40px;
+    height: 60px;
     fill: var(--cinder);
     cursor: pointer;
 }
