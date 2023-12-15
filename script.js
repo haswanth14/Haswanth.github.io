@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     // kursor
      new kursor({
-         type: 4,
+         type: 2,
          color: '#7E74F1'
      });
     // SVG Sprite Support
