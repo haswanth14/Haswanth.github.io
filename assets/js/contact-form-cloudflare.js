@@ -13,6 +13,8 @@ async function handleRequest(request) {
     if (request.method === "OPTIONS") {
         return new Response(null, {
             headers: {
+
+                
                 ...requestHeaders,
                 "Content-Type": "text/plain",
             }
