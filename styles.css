@@ -590,7 +590,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 }
 .portfolio-section .portfolio-item figure {
     overflow: hidden;
-    height: calc(100% - 14px);
+    height: 300px
 }
 .portfolio-section .portfolio-item figure img {
     opacity: .5;
